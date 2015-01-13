@@ -1,0 +1,28 @@
+** About
+
+This Emacs package provides commands for inserting pairs of characters.
+These commands work in the same way as =M-x insert-parentheses= does;
+the only difference is they insert other characters: =[]=, ={}=, =<>=, …
+
+** Installation
+
+*** Automatic
+
+You may easily install this package with [[https://github.com/quelpa/quelpa][Quelpa]]:
+
+#+BEGIN_SRC emacs-lisp
+(quelpa '(insert-pair :fetcher github :repo "alezost/insert-pair.el"))
+#+END_SRC
+
+*** Manual
+
+The manual installation is much less convenient because you need to add
+(to your =.emacs=) autoloads for all the commands you need, i.e.:
+
+#+BEGIN_SRC emacs-lisp
+(add-to-list 'load-path "/path/to/insert-pair-dir")
+(autoload 'insert-pair-curly-brackets "insert-pair" nil t)
+(autoload 'insert-pair-double-quotations "insert-pair" nil t)
+(autoload 'insert-pair-grave-accent-quotation "insert-pair" nil t)
+...
+#+END_SRC
