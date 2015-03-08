@@ -5,7 +5,6 @@
 ;; Author: Alex Kost <alezost@gmail.com>
 ;; Created: 12 Jan 2015
 ;; Version: 0.1
-;; URL: https://gitorious.org/alezost-emacs/insert-pair
 ;; URL: https://github.com/alezost/insert-pair.el
 ;; Keywords: convenience
 
